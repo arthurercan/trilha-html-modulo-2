@@ -1,0 +1,37 @@
+* {
+    text-align:center;
+    font-size: 23px;
+}
+html, body .footer{
+    margin:0; padding:0; background-color: rgb(94, 136, 250);
+}
+
+fieldset {
+    margin-top: 35px;
+    margin-left: 0;
+    border-color: rgba(79, 76, 255, 0.277);
+}
+fieldset span {
+    margin: 15px;
+}
+ a {
+    font-size: 30px;
+    color: rgb(10, 24, 88);
+    text-decoration: none;
+ }
+a:hover {
+    color: aliceblue;
+}
+table {
+    display: inline-table;
+    margin-top: 70px;
+    border-color: rgb(57, 35, 139);
+}
+
+
+.page {position:relative;}
+.left-bar {position:fixed; left:0px; width:200px; height:100%; border-right:1px solid rgb(27, 27, 73);}
+.right-bar {margin-left:200px; padding-top:150px;}
+.header {position:absolute; left:200px; top:0px; right:0px; height:150px; border:2px solid rgb(27, 27, 73);}
+.content {height:1000px;} /*replace with height:auto; for real content*/
+.footer {height:40px;display: inline; border-top:1px solid rgb(55, 31, 161);margin-top: 10px; background:rgb(91, 91, 182);}

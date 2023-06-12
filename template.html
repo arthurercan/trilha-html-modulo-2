@@ -5,31 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Template - Utilizar como modelo</title>
-    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="wrapper">
-        <div class="menu">
-            <!-- Aqui vai o seu menu -->
-            <ul>
-                <li><a href="#">Link</a></li>
-            </ul>
+    <div class="page">
+        <div class="left-bar">
+            <div class="menu">
+                <a href="about.html">sobre</a>
+                <a href="schedule.html">atendimento</a>
+            </div>
         </div>
-
-        <div class="main">
-            <div class="header">
-                Header
-                <!-- Aqui vai o seu header -->
-            </div>
-    
+        <div class="right-bar">
+            <div class="header"><img title="logo" alt="logo" src="data:image/png;base64,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" width="100%" height="100%"/></div>
             <div class="content">
-                Content
-                <!-- Aqui vai o seu conteúdo -->
+                <fieldset>
+                    <legend><span>Historía</span></legend>
+                    <p><i>Sonho virou compromisso da comunidade judaica: oferecer à população do Brasil uma referência em qualidade da prática médica</i></p>
+                    <img src="https://www.einstein.br/PublishingImages/Lists/PortalContent/AllItems/conteudo-img-quem-somos.jpg" width="45%"/>
+                    <p>Com mais de 60 anos de existência, a Sociedade Beneficente Israelita Brasileira Albert Einstein ainda mantém uma premissa: inovar e crescer, sempre com excelência. E olha que tudo começou pequeno, numa reunião de amigos, em 1955, em que o dr. Manoel Tabacow Hidal apresentou sua ideia de fazer um hospital. O sonho virou compromisso da comunidade judaica: oferecer à população do Brasil uma referência em qualidade da prática médica.</p>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/rlAmbwA6nfU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <p>Mas a intenção era ainda maior. E assim tem sido feito. Construído com recursos provenientes de doações e do trabalho de um grupo de pessoas dedicadas, a pedra fundamental foi lançada em 1958. Nos anos 60, foram sendo entregues alguns departamentos, mas o Hospital Israelita Albert Einstein foi inaugurado mesmo em 1971. A partir de então, tornou-se referência em tratamentos com tecnologia de ponta e atendimento humanizado e expandiu suas fronteiras com ações de responsabilidade social e atividades de ensino e pesquisa.
+                    </p>
+                </fieldset>
             </div>
-    
             <div class="footer">
-                Footer
-                <!-- Aqui vai o seu rodapé -->
+                <h4>Central de Atendimento</h4>
+                <p>São Paulo</p>
+                <div>
+                <span><img src="https://www.einstein.br/Style%20Library/components/newHome/img/call-white.svg"/></span>
+                <p>+55 11 2151-1233</p>
+                </div>
             </div>
         </div>
     </div>
